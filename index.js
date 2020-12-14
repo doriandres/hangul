@@ -17,8 +17,8 @@ export function speak(text, voice, rate = 1, pitch = 1) {
 }
 
 setUpVoices();
-[...document.querySelectorAll('.silabo')].forEach(silabo => {
-    silabo.addEventListener('click', () => {
-        speak(silabo.textContent, languages.korean);
+[...document.querySelectorAll('.syllable')].forEach(syllable => {
+    syllable.addEventListener('click', () => {
+        speak(syllable.textContent, languages.korean);
     });
 })
